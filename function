@@ -1,0 +1,1597 @@
+
+#def remove_element(array_nums, val):
+   # i = 0
+
+ #while  < len(array_nums):
+     #if array_nums[i] == val:
+       # array_nums.remove(array_nums[i])
+     #else:
+        #i += 1
+
+# return len(array_nums)
+
+#print(remove_element([1, 2, 3, 4, 5, 6, 7, 5], 5))
+#print(remove_element([10, 10, 10, 10, 10], 10))
+#print(remove_element([10, 10, 10, 10, 10], 20))
+#print(remove_element([], 1))
+
+
+
+
+
+
+
+
+
+
+#def search_Range(array_nums, target_val):
+    #result_arra = []
+    
+   # start_pos = -1
+   # end_pos = 0
+    
+    #for i in range(len(array_nums)):
+       # if target_val == array_nums[i] and start_pos == -1
+            #start_pos = i
+           # end_pos = i
+       # elif target_val == array_nums[i] and start_pos != -1:
+        
+           # end_pos = i
+    
+    #result_arra.append(start_pos)
+   # result_arra.append(end_pos)
+    
+    #return result_arra
+
+
+#print(search_Range([5, 7, 7, 8, 8, 8], 8))        
+#print(search_Range([1, 3, 6, 9, 13, 14], 4))      
+#print(search_Range([5, 7, 7, 8, 10], 8)) 
+
+
+
+
+
+
+
+
+#def max_profit(stock_price):
+    #max_profit_amt = 0
+
+    #for i in range(len(stock_price)):
+        #profit_amt = 0
+        
+        #for j in range(i+1, len(stock_price)):
+            #profit_amt = stock_price[j] - stock_price[i]
+            
+            #if profit_amt > max_profit_amt:
+                #max_profit_amt = profit_amt
+    
+    #return max_profit_amt
+
+#print(max_profit([224, 236, 247, 258, 259, 225]))
+
+
+
+
+
+
+
+
+#def print_matrix(nums):
+    #flag = True 
+    
+    #for line in nums:
+           #if flag == True: 
+            #i = 0
+            #while i < len(line):
+                #print(line[i])
+                #i += 1
+           # flag = False
+        #else: 
+            #i = -1
+            #while i > -1 * len(line) - 1:
+               # print(line[i])
+                #i = i - 1
+           # flag = True
+
+#print_matrix([[1, 2, 3, 4],
+              #[5, 6, 7, 8],
+              #[0, 6, 2, 8],
+              #[2, 3, 0, 2]])
+
+
+
+
+
+
+
+
+
+
+#def largest_product_of_three(nums):
+   # max_val = nums[1]
+
+   # for i in range(len(nums)):
+        #for j in range(i+1, len(nums)):
+            #for k in range(j+1, len(nums)):
+                #max_val = max(nums[i] * nums[j] * nums[k], max_val)
+                
+    #return max_val
+    
+#print(largest_product_of_three([-10, -20, 20, 1]))
+#print(largest_product_of_three([-1, -1, 4, 2, 1]))
+#print(largest_product_of_three([1, 2, 3, 4, 5, 6]))
+
+
+
+
+
+
+
+
+#def first_missing_number(nums):
+   # if len(nums) == 0:
+        #return 1
+        
+    #nums.sort()
+    
+   # smallest_int_num = 0
+    
+   # for i in range(len(nums) - 1):
+        #if nums[i] <= 0 or nums[i] == nums[i + 1]:
+            #continue
+        #else:
+           # if nums[i + 1] - nums[i] != 1:
+                #smallest_int_num = nums[i] + 1
+                #return smallest_int_num
+    
+    #if smallest_int_num == 0:
+        #smallest_int_num = nums[-1] + 1
+    
+   # return smallest_int_num
+
+#print(first_missing_number([2, 3, 7, 6, 8, -1, -10, 15, 16])) 
+#print(first_missing_number([1, 2, 4, -7, 6, 8, 1, -10, 15]))
+#print(first_missing_number([1, 2, 3, 4, 5, 6, 7]))
+#print(first_missing_number([-2, -3, -1, 1, 2, 3]))
+
+
+
+
+
+
+
+
+#def cal_median(nums):
+    #nums.sort()
+    
+    #n = len(nums)
+    
+    #m = n // 2
+    
+    #if n % 2 == 0:
+        #return (nums[m - 1] + nums[m]) / 2
+    #else:
+        #return nums[m]
+
+#print(cal_median([1,2,3,4,5]))
+#print(cal_median([1,2,3,4,5,6]))
+#print(cal_median([6,1,2,4,5,3]))
+#print(cal_median([1.0,2.11,3.3,4.2,5.22,6.55]))
+#print(cal_median([1.0,2.11,3.3,4.2,5.22]))
+#print(cal_median([2.0,12.11,22.3,24.12,55.22]))
+
+
+
+
+
+
+#def is_symmetrical_num(n):
+    #return str(n) == str(n)[::-1]
+
+#print(is_symmetrical_num(121))     
+#print(is_symmetrical_num(0))    
+#print(is_symmetrical_num(122))    
+#print(is_symmetrical_num(990099)) 
+
+
+
+
+
+#def count_sum(nums):
+    #if not nums:
+        #return []
+    
+   #return [len([n for n in nums if n < 0]), sum(n for n in nums if n > 0)]
+
+#nums = [1, 2, 3, 4, 5]
+#print("Original list:", nums)
+#print("Number of negative numbers and sum of positive numbers:", count_sum(nums))
+
+#nums = [-1, -2, -3, -4, -5]
+#print("Original list:", nums)
+#print("Number of negative numbers and sum of positive numbers:", count_sum(nums))
+
+#nums = [1, 2, 3, -4, -5]
+#print("Original list:", nums)
+#print("Number of negative numbers and sum of positive numbers:", count_sum(nums))
+
+#nums = [1, 2, -3, -4, -5]
+#print("Original list:", nums)
+#print("Number of negative numbers and sum of positive numbers:", count_sum(nums))
+
+
+
+
+
+
+
+
+#def check_isogram(str1):
+    #return len(str1) == len(set(str1.lower()))
+
+#print(check_isogram("w3resource"))
+#print(check_isogram("w3r"))
+#print(check_isogram("Python"))
+#print(check_isogram("Java"))
+
+
+
+
+
+
+#def test_three_equal(x, y, z):
+    #result = set([x, y, z])
+
+    #if len(result) == 3:
+        #return 0
+    #else:
+        #return (4 - len(result))
+
+#print(test_three_equal(1, 1, 1))    
+#print(test_three_equal(1, 2, 2))    
+#print(test_three_equal(-1, -2, -3)) 
+#print(test_three_equal(-1, -1, -1))
+
+
+
+
+
+
+
+#def is_valid_emp_code(emp_code):
+    #return len(emp_code) in [8, 12] and emp_code.isdigit()
+
+#print(is_valid_emp_code('12345678'))      
+#print(is_valid_emp_code('1234567j'))       
+#print(is_valid_emp_code('12345678j'))      
+#print(is_valid_emp_code('123456789123'))   
+#print(is_valid_emp_code('123456abcdef'))
+
+
+
+
+
+
+
+#def string_letter_check(str1, str2):
+    #return all([char in str1.lower() for char in str2.lower()])
+
+#print(string_letter_check("python", "ypth"))    
+#print(string_letter_check("python", "ypths"))   
+#print(string_letter_check("python", "ypthon")) 
+#print(string_letter_check("123456", "01234"))   
+#print(string_letter_check("123456", "1234"))
+
+
+
+
+
+
+
+
+#def sum_three_smallest_nums(lst):
+    #return sum(sorted([x for x in lst if x > 0])[:3])
+
+#nums = [10, 20, 30, 40, 50, 60, 7]
+#print("Original list of numbers: ", nums)
+#print("Sum of the three lowest positive numbers of the said array: ", sum_three_smallest_nums(nums))
+
+#nums = [1, 2, 3, 4, 5]
+#print("\nOriginal list of numbers: ", nums)
+#print("Sum of the three lowest positive numbers of the said array: ", sum_three_smallest_nums(nums))
+
+#nums = [0, 1, 2, 3, 4, 5]
+#print("\nOriginal list of numbers: ", nums)
+#print("Sum of the three lowest positive numbers of the said array: ", sum_three_smallest_nums(nums))
+
+
+
+
+
+
+
+
+#def new_string(str1):
+    #return '*' * (len(str1) - 5) + str1[-5:]
+	
+
+#text = "kdi39323swe"
+#print("Original String: ", text)
+#print("new string: ", new_string(text))
+
+#text = "12345abcdef"
+#print("\nOriginal String: ", text)
+#print("new string: ", new_string(text))
+
+#text = "12345"
+#print("\nOriginal String: ", text)
+#print("new string: ", new_string(text))
+
+
+
+
+
+
+
+
+#def num_of_args(*args):
+    #return(len(args))
+
+
+#print(num_of_args())          
+#print(num_of_args(1))         
+#print(num_of_args(1, 2))       
+#print(num_of_args(1, 2, 3))  
+#print(num_of_args(1, 2, 3, 4))
+#print(num_of_args([1, 2, 3, 4])) 
+
+
+
+
+
+
+
+#def nums_cumulative_sum(nums_list):
+    #return [sum(nums_list[:i+1]) for i in range(len(nums_list))]
+
+
+#print(nums_cumulative_sum([10, 20, 30, 40, 50, 60, 7]))
+
+#print(nums_cumulative_sum([1, 2, 3, 4, 5]))
+
+#print(nums_cumulative_sum([0, 1, 2, 3, 4, 5]))
+
+
+
+
+
+
+
+#def middle_char(txt):
+    #return txt[(len(txt)-1)//2:(len(txt)+2)//2]
+
+
+#text = "Python"
+#print("Original string: ", text)
+#print("Middle character(s) of the said string: ", middle_char(text))
+
+#text = "PHP"
+#print("\nOriginal string: ", text)
+#print("Middle character(s) of the said string: ", middle_char(text))
+
+#text = "Java"
+#print("\nOriginal string: ", text)
+#print("Middle character(s) of the said string: ", middle_char(text))
+
+
+
+
+
+
+
+
+#def adjacent_num_product(list_nums):
+    #return max(a * b for a, b in zip(list_nums, list_nums[1:]))
+
+
+#nums = [1, 2, 3, 4, 5, 6]
+#print("Original list: ", nums)
+#print("Largest product of the pair of adjacent elements of the said list:", adjacent_num_product(nums))
+
+#nums = [1, 2, 3, 4, 5]
+#print("\nOriginal list: ", nums)
+#print("Largest product of the pair of adjacent elements of the said list:", adjacent_num_product(nums))
+
+#nums = [2, 3]
+#print("\nOriginal list: ", nums)
+#print("Largest product of the pair of adjacent elements of the said list:", adjacent_num_product(nums))
+
+
+
+
+
+
+
+
+
+#def odd_even_position(nums):
+    #return all(nums[i] % 2 == i % 2 for i in range(len(nums)))
+
+
+#nums = [2, 1, 4, 3, 6, 7, 6, 3]
+#print("Original list of numbers:", nums)
+#print("Check whether every even index contains an even number and every \nodd index contains odd number of a given list:")
+#print(odd_even_position(nums))
+
+#nums = [2, 1, 4, 3, 6, 7, 6, 4]
+#print("\nOriginal list of numbers:", nums)
+#print("Check whether every even index contains an even number and every \nodd index contains odd number of a given list:")
+#print(odd_even_position(nums))
+
+#nums = [4, 1, 2]
+#print("\nOriginal list of numbers:", nums)
+#print("Check whether every even index contains an even number and every \nodd index contains odd number of a given list:")
+#print(odd_even_position(nums))
+
+
+
+
+
+
+
+
+
+#def is_narcissistic_num(num):
+    #return num == sum([int(x) ** len(str(num)) for x in str(num)])
+
+
+#print(is_narcissistic_num(153))
+
+#print(is_narcissistic_num(370))
+
+#print(is_narcissistic_num(407))
+
+#print(is_narcissistic_num(409))
+
+#print(is_narcissistic_num(1634))
+
+#print(is_narcissistic_num(8208))
+
+#print(is_narcissistic_num(9474))
+
+#print(is_narcissistic_num(9475))
+
+
+
+
+
+
+
+
+
+#def highest_lowest_num(str1):
+   # num_list = list(map(int, str1.split()))
+    
+    #return max(num_list), min(num_list)
+
+
+#text = "1 4 5 77 9 0"
+#print("Original string:", text)
+#print("Highest and lowest number of the said string:", highest_lowest_num(text))
+
+#text = "-1 -4 -5 -77 -9 0"
+#print("\nOriginal string:", text)
+#print("Highest and lowest number of the said string:", highest_lowest_num(text))
+
+#text = "0 0"
+#print("\nOriginal string:", text)
+#print("Highest and lowest number of the said string:", highest_lowest_num(text))
+
+
+
+
+
+
+
+
+#def increasing_trend(nums):
+    #if (sorted(nums) == nums):
+        #return True
+    #else:
+        #return False
+
+
+#print(increasing_trend([1,2,3,4]))
+
+#print(increasing_trend([1,2,5,3,4]))
+
+#print(increasing_trend([-1,-2,-3,-4]))
+
+#print(increasing_trend([-4,-3,-2,-1]))
+
+#print(increasing_trend([1,2,3,4,0]))
+
+
+
+
+
+
+
+
+#def find_string(txt, str1):
+    #return txt.find(str1, txt.find(str1) + 1)
+
+
+#print(find_string("The quick brown fox jumps over the lazy dog", "the"))
+
+#print(find_string("the quick brown fox jumps over the lazy dog", "the"))
+
+
+
+
+
+
+
+
+#def sum_index_multiplier(nums):
+    #return sum(j * i for i, j in enumerate(nums))
+
+
+#print(sum_index_multiplier([1,2,3,4]))
+
+#print(sum_index_multiplier([-1,-2,-3,-4]))
+
+#print(sum_index_multiplier([]))
+
+
+
+
+
+
+
+
+
+#def oldest_student(students):
+    #return max(students, key=students.get)
+
+
+#print(oldest_student({"Bernita Ahner": 12, "Kristie Marsico": 11, 
+                      #"Sara Pardee": 14, "Fallon Fabiano": 11, 
+                      #"Nidia Dominique": 15}))
+
+#print(oldest_student({"Nilda Woodside": 12, "Jackelyn Pineda": 12.2, 
+                      #"Sofia Park": 12.4, "Joannie Archibald": 12.6, 
+                      #"Becki Saunder": 12.7}))
+
+
+
+
+
+
+
+
+
+
+
+#def no_consecutive_letters(txt):
+    #return txt[0] + ''.join(txt[i] for i in range(1, len(txt)) if txt[i] != txt[i-1])
+
+
+#print(no_consecutive_letters("PPYYYTTHON"))
+
+#print(no_consecutive_letters("PPyyythonnn"))
+
+#print(no_consecutive_letters("Java"))
+
+#print(no_consecutive_letters("PPPHHHPPP"))
+
+
+
+
+
+
+
+
+
+
+#def parallel_lines(line1, line2):
+    #return line1[0]/line1[1] == line2[0]/line2[1]
+
+
+#print(parallel_lines([2,3,4], [2,3,8]))
+
+#print(parallel_lines([2,3,4], [4,-3,8]))
+
+
+
+
+
+
+
+#def matrix_number(matrix):
+    #result = set(map(min, matrix)) & set(map(max, zip(*matrix)))
+    #return list(result)
+
+
+#m1 = [[1,2], [2,3]]
+#print("Original matrix:", m1)
+#print("Number in the said matrix which is maximum in its column and minimum in its row:")
+#print(matrix_number(m1))
+
+#m1 = [[1,2,3], [3,4,5]]
+#print("\nOriginal matrix:", m1)
+#print("Number in the said matrix which is maximum in its column and minimum in its row:")
+#print(matrix_number(m1))
+
+#m1 = [[7,5,6], [3,4,4], [6,5,7]]
+#print("\nOriginal matrix:", m1)
+#print("Number in the said matrix which is maximum in its column and minimum in its row:")
+#print(matrix_number(m1))
+
+
+
+
+
+
+
+
+
+#def Seq_Linear_Quadratic_Cubic(seq_nums):
+    #seq_nums = [seq_nums[x] - seq_nums[x-1] for x in range(1, len(seq_nums))]
+    
+    #if len(set(seq_nums)) == 1:
+        #return "Linear Sequence"
+    
+    #seq_nums = [seq_nums[x] - seq_nums[x-1] for x in range(1, len(seq_nums))]
+    
+    #if len(set(seq_nums)) == 1:
+        #return "Quadratic Sequence"
+    
+    #3seq_nums = [seq_nums[x] - seq_nums[x-1] for x in range(1, len(seq_nums))]
+    
+    #if len(set(seq_nums)) == 1:
+        #return "Cubic Sequence"
+
+
+#nums = [0,2,4,6,8,10]
+#print("Original Sequence:", nums)
+#print("Check the said sequence is Linear, Quadratic, or Cubic?")
+#print(Seq_Linear_Quadratic_Cubic(nums))
+
+#nums = [1,4,9,16,25]
+#print("\nOriginal Sequence:", nums)
+#print("Check the said sequence is Linear, Quadratic, or Cubic?")
+#print(Seq_Linear_Quadratic_Cubic(nums))
+
+#nums = [0,12,10,0,-12,-20]
+#print("\nOriginal Sequence:", nums)
+#print("Check the said sequence is Linear, Quadratic, or Cubic?")
+#print(Seq_Linear_Quadratic_Cubic(nums))
+
+#nums = [1,2,3,4,5]
+#print("\nOriginal Sequence:", nums)
+#print("Check the said sequence is Linear, Quadratic, or Cubic?")
+#print(Seq_Linear_Quadratic_Cubic(nums))
+
+
+
+
+
+
+
+
+
+
+
+#def is_pandigital_num(n):
+    #return len(set(str(n))) == 10
+
+
+#n = 1023456897
+#print("Original number:", n)
+#print("Check the said number is Pandigital number or not?")
+#print(is_pandigital_num(n))
+
+#n = 1023456798
+#print("\nOriginal number:", n)
+#print("Check the said number is Pandigital number or not?")
+#print(is_pandigital_num(n))
+
+#n = 1023457689
+#print("\nOriginal number:", n)
+#print("Check the said number is Pandigital number or not?")
+#print(is_pandigital_num(n))
+
+#n = 1023456789
+#print("\nOriginal number:", n)
+#print("Check the said number is Pandigital number or not?")
+#print(is_pandigital_num(n))
+
+#n = 102345679
+#print("\nOriginal number:", n)
+#print("Check the said number is Pandigital number or not?")
+#print(is_pandigital_num(n))
+
+
+
+
+
+
+
+
+#def oddish_evenish_num(n):
+   
+    #return 'Oddish' if sum(map(int, str(n))) % 2 else 'Evenish'
+
+
+#n = 120
+#print("Original Number:", n)
+#print("Check whether the sum of all digits of the said number is odd or even!")
+#print(oddish_evenish_num(120))
+
+#n = 321
+#print("\nOriginal Number:", n)
+#print("Check whether the sum of all digits of the said number is odd or even!")
+#print(oddish_evenish_num(321))
+
+#n = 43 
+#print("\nOriginal Number:", n)
+#print("Check whether the sum of all digits of the said number is odd or even!")
+#print(oddish_evenish_num(43))
+
+#n = 4433
+#print("\nOriginal Number:", n)
+#print("Check whether the sum of all digits of the said number is odd or even!")
+#print(oddish_evenish_num(4433))
+
+#n = 373
+#print("\nOriginal Number:", n)
+#print("Check whether the sum of all digits of the said number is odd or even!")
+#print(oddish_evenish_num(373))
+
+
+
+
+
+
+
+#def check_last_digit(x, y, z):
+    #return str(x + z)[-1] == str(y)[-1]
+
+
+#print(check_last_digit(12, 26, 44))
+
+#print(check_last_digit(145, 122, 1010))
+
+#print(check_last_digit(0, 20, 40))
+
+#print(check_last_digit(1, 22, 40))
+
+#print(check_last_digit(145, 129, 104))
+
+
+
+
+
+
+
+#def indices_in_list(nums_list, n):
+    #return [idx for idx, i in enumerate(nums_list) if i == n]
+
+
+#nums = [1,2,3,4,5,2]
+#print("Original list of numbers:", nums)
+#n = 2
+#print("Given Number:", n)
+#print("Indices of all occurrences of the said item in the given list:")
+#print(indices_in_list(nums, n))
+
+#nums = [3,1,2,3,4,5,6,3,3]
+#print("\nOriginal list of numbers:", nums)
+#n = 3
+#print("Given Number:", n)
+#print("Indices of all occurrences of the said item in the given list:")
+#print(indices_in_list(nums, n))
+
+#nums = [1,2,3,-4,5,2,-4]
+#print("\nOriginal list of numbers:", nums)
+#n = -4
+#print("Given Number:", n)
+#print("Indices of all occurrences of the said item in the given list:")
+#print(indices_in_list(nums, n))
+
+#nums = [1,2,3,4,5,2]
+#print("\nOriginal list of numbers:", nums)
+#n = 7
+#print("Given Number:", n)
+#print("Indices of all occurrences of the said item in the given list:")
+#print(indices_in_list(nums, n))
+
+
+
+
+
+
+#def unique_nums(nums):
+    #return [i for i in nums if nums.count(i) == 1]
+
+
+#nums = [1,2,3,2,3,4,5]
+#print("Original list of numbers:", nums)
+#print("After removing the duplicate numbers from the said list:")
+#print(unique_nums(nums))
+
+#nums = [1,2,3,2,4,5]
+#print("\nOriginal list of numbers:", nums)
+#print("After removing the duplicate numbers from the said list:")
+#print(unique_nums(nums))
+
+#nums = [1,2,3,4,5]
+#print("\nOriginal list of numbers:", nums)
+#print("After removing the duplicate numbers from the said list:")
+#print(unique_nums(nums))
+
+
+
+
+
+
+
+
+
+#def is_circle_collision(circle1, circle2):
+    #x1, y1, r1 = circle1
+    #x2, y2, r2 = circle2
+    
+    #distance = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+    
+    #return distance <= r1 + r2
+
+
+#print(is_circle_collision([1, 2, 4], [1, 2, 8]))
+
+#print(is_circle_collision([0, 0, 2], [10, 10, 5]))
+
+
+
+
+
+
+
+
+#def digit_distance_nums(num1: int, num2: int) -> int:
+    #return sum(abs(i - j) for i, j in zip(map(int, str(num1)), map(int, str(num2))))
+	
+
+#print(digit_distance_nums(509, 510))
+
+#print(digit_distance_nums(123, 256))
+
+#print(digit_distance_nums(23, 56))
+
+#print(digit_distance_nums(1, 2))
+
+#print(digit_distance_nums(24232, 45645))
+
+
+
+
+
+
+
+
+
+#def reverse_even(txt):
+    
+    #reversed_words = [i[::-1] if not len(i) % 2 else i for i in txt.split()]
+
+    #return ' '.join(reversed_words)
+
+
+#print(reverse_even("The quick brown fox jumps over the lazy dog"))
+
+#print(reverse_even("Python Exercises"))
+
+
+
+
+
+
+
+
+
+#import string
+
+#print("Alphabet from a-z:")
+#for letter in string.ascii_lowercase:
+    #print(letter, end=" ")
+
+#print()
+
+#print("Alphabet from A-Z:")
+#for letter in string.ascii_uppercase:
+    #print(letter, end=" ")
+
+
+
+
+
+
+
+
+
+#nums = range(1, 10)
+
+
+#print(list(nums))
+
+
+#print(list(map(str, nums)))
+
+
+
+
+
+
+
+
+
+
+#import math
+#def is_not_prime(n):
+    #ans = False
+    
+    #for i in range(2, int(math.sqrt(n)) + 1):
+        #if n % i == 0:
+            #ans = True
+    
+    #return ans
+
+#print("Nonprime numbers between 1 to 100:")
+
+
+#for x in filter(is_not_prime, range(1, 101)):
+    #print(x)
+
+
+
+
+
+
+
+
+
+
+
+#import requests
+
+#url = 'http://www.example.com/'
+
+#headers = {'User-Agent': 'Mozilla/5.0 (Macintosh) Gecko/20100101 Firefox/38.0'}
+
+#request = requests.get(url, headers=headers)
+
+#print("Web page status: ", request)
+
+#print("\nHTML code of the above web page:")
+#if request.ok:
+    #print(request.text)
+
+
+
+
+
+
+
+
+
+
+#from multiprocessing import Process
+
+#import os
+
+#def info(title):
+    #print(title)
+    #print('module name:', __name__)
+    #print('parent process:', os.getppid())
+    #print('process id:', os.getpid())
+
+#def f(name):
+    #info('function f')
+    #print('hello', name)
+
+#if __name__ == '__main__':
+    #info('Main line')
+
+    #p = Process(target=f, args=('bob',))
+
+    #p.start()
+
+    #p.join()
+
+
+
+
+
+
+
+
+
+#def gcd(p, q):
+    #while q != 0:
+        #p, q = q, p % q
+    #return p
+
+#def is_coprime(x, y):
+    #return gcd(x, y) == 1
+
+#print(is_coprime(17, 13))
+#print(is_coprime(17, 21))
+#print(is_coprime(15, 21))
+#print(is_coprime(25, 45))
+
+
+
+
+
+
+
+
+
+
+
+#def gcd(p, q):
+    #while q != 0:
+        #p, q = q, p % q
+    #return p
+
+#def is_coprime(x, y):
+    #return gcd(x, y) == 1
+
+#def phi_func(x):
+    #if x == 1:
+        #return 1
+    #else:
+        #n = [y for y in range(1, x) if is_coprime(x, y)]
+        #return len(n)
+
+#print(phi_func(10))
+#print(phi_func(15))
+#print(phi_func(33))
+
+
+
+
+
+
+
+
+
+#def test(input_str):
+    #translated_str = input_str.translate(str.maketrans('PTSHA', '90168'))
+    #return translated_str
+
+#str1 = "PHP"
+#print("Original string: ", str1)
+#print("Coded string: ", test(str1))
+
+#str2 = "JAVASCRIPT"
+#print("\nOriginal string: ", str2)
+#print("Coded string: ", test(str2))
+
+
+
+
+
+
+
+
+
+#def test(input_str):
+    #return input_str.islower() or input_str.isupper()
+
+#str1 = "PHP"
+#print("Original string: ", str1)
+#print("Coded string: ", test(str1))
+
+#str2 = "javascript"
+#print("\nOriginal string: ", str2)
+#print("Coded string: ", test(str2))
+
+#str3 = "JavaScript"
+#print("\nOriginal string: ", str3)
+#print("Coded string: ", test(str3))
+
+
+
+
+
+
+
+
+#def test(input_str):
+    #return input_str if len(input_str) < 3 else input_str[1:-1]
+
+#str1 = "PHP"
+#print("Original string: ", str1)
+#print("Removing the first and last elements from the said string: ", test(str1))
+
+#str2 = "Python"
+#print("\nOriginal string: ", str2)
+#print("Removing the first and last elements from the said string: ", test(str2))
+
+#str3 = "JavaScript"
+#print("\nOriginal string: ", str3)
+#print("Removing the first and last elements from the said string: ", test(str3))
+
+
+
+
+
+
+
+
+
+#def test(input_str):
+    #return any(c1 == c2 for c1, c2 in zip(input_str, input_str[1:]))
+
+#str1 = "PHP"
+#print("Original string: ", str1)
+#print("Check for consecutive similar letters! ", test(str1))
+
+#str2 = "PHHP"
+#print("\nOriginal string: ", str2)
+#print("Check for consecutive similar letters! ", test(str2))
+
+#str3 = "PHPP"
+#print("\nOriginal string: ", str3)
+#print("Check for consecutive similar letters! ", test(str3))
+
+
+
+
+
+
+
+
+#def test(input_str):
+    #return input_str[::-1].lower()
+
+#str1 = "PHP"
+#print("Original string:", str1)
+#print("Reverse the said string in lower case:", test(str1))
+
+#str2 = "JavaScript"
+#print("\nOriginal string:", str2)
+#print("Reverse the said string in lower case:", test(str2))
+
+#str3 = "PHPP"
+#print("\nOriginal string:", str3)
+#print("Reverse the said string in lower case:", test(str3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#def test(input_str):
+    
+    #return ''.join(sorted(input_str))
+
+#str1 = "PHP"
+#print("Original string:", str1)
+#print("Convert the letters of the said string into alphabetical order:", test(str1))
+
+#str2 = "javascript"
+#print("\nOriginal string:", str2)
+#print("Convert the letters of the said string into alphabetical order:", test(str2))
+
+#str3 = "python"
+#print("\nOriginal string:", str3)
+#print("Convert the letters of the said string into alphabetical order:", test(str3)) 
+
+
+
+
+
+
+
+
+
+
+#import array as arr
+
+#def test(nums):
+    #return sum(nums) % len(nums) == 0
+
+#array_num = arr.array('i', [1, 3, 5, 7, 9])
+
+#print("Original array:")
+#for i in range(len(array_num)):
+    #print(array_num[i], end=' ')
+
+#print("\nCheck the average value of the elements of the said array is a whole number or not:\n", test(array_num))
+
+#array_num = arr.array('i', [2, 4, 2, 6, 4, 8])
+
+#print("\nOriginal array:")
+#for i in range(len(array_num)):
+    #print(array_num[i], end=' ')
+
+#print("\nCheck the average value of the elements of the said array is a whole number or not:\n", test(array_num))
+
+
+
+
+
+
+
+
+
+
+#import re
+
+#def test(text):
+    #return re.sub(r'[aeiou]+', '', text, flags=re.IGNORECASE)
+
+#text = "Python"
+#print("Original string:", text)
+#print("After removing all the vowels from the said string: " + test(text))
+
+#text = "C Sharp"
+#print("\nOriginal string:", text)
+#print("After removing all the vowels from the said string: " + test(text))
+
+#text = "JavaScript"
+#print("\nOriginal string:", text)
+#print("After removing all the vowels from the said string: " + test(text))
+
+
+
+
+
+
+
+#def test(text):
+   #return [x for x in range(len(text)) if text[x].islower()]
+
+#text = "Python"
+#print("Original string:", text)
+#print("Indices of all lower case letters of the said string:\n", test(text))
+
+#text = "JavaScript"
+#print("\nOriginal string:", text)
+#print("Indices of all lower case letters of the said string:\n", test(text))
+
+#text = "PHP"
+#print("\nOriginal string:", text)
+#print("Indices of all lower case letters of the said string:\n", test(text))
+
+
+
+
+
+
+
+#from datetime import date
+
+#def test(month, year): 
+    #is_monday_13th = date(year, month, 13).strftime("%A") == 'Monday'
+    
+    #return str(is_monday_13th)
+
+#month = 11
+#year = 2022
+
+#print("Month No.: ", month, " Year: ", year)
+#print("Check whether the said month and year contain a Monday 13th.: " + test(month, year))
+
+#month = 6
+#year = 2022
+
+#print("\nMonth No.: ", month, " Year: ", year)
+#print("Check whether the said month and year contain a Monday 13th.: " + test(month, year))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#def test(num):
+    #ones = bin(num).replace("0b", "").count('1')
+    #zeros = bin(num).replace("0b", "").count('0')
+    #return "Number of zeros: " + str(zeros) + ", Number of ones: " + str(ones)
+
+#n = 12
+
+#print("Original number: ", n)
+#print("Number of ones and zeros in the binary representation of the said number:")
+#print(test(n))
+
+#n = 1234
+
+#print("\nOriginal number: ", n)
+#print("Number of ones and zeros in the binary representation of the said number:")
+#print(test(n))
+
+
+
+
+
+
+
+#from functools import reduce
+
+#def test(n):    
+    #return set(reduce(list.__add__, 
+                #([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
+
+
+
+
+#n = 1
+#print("\nOriginal Number:", n)
+#print("Factors of the said number:", test(n))
+#n = 12
+#print("\nOriginal Number:", n)
+#print("Factors of the said number:", test(n))
+#n = 100
+#print("\nOriginal Number:", n)
+#print("Factors of the said number:", test(n))
+
+
+
+
+
+
+
+
+#def test(lst):
+
+    #pos_sum = 0
+    #neg_sum = 0
+
+    #for n in lst:
+       
+        #if n > 0:
+           # pos_sum += n 
+        #elif n < 0:
+            #neg_sum += n  
+    #return max(pos_sum, neg_sum, key=abs)
+
+#nums = {0, -10, -11, -12, -13, -14, 15, 16, 17, 18, 19, 20}
+#print("Original array elements:")
+#print(nums)
+#print("Largest sum - Positive/Negative numbers of the said array: ", test(nums))
+
+#nums = {-11, -22, -44, 0, 3, 4, 5, 9}
+#print("\nOriginal array elements:")
+#print(nums)
+#print("Largest sum - Positive/Negative numbers of the said array: ", test(nums))
+
+
+
+
+
+
+
+
+
+
+#def test(txt):
+    #result_str = ""
+    
+    #s = True
+    
+    #for i in txt:
+        #result_str += i.upper() if s else i.lower()
+        
+        #if i.isalpha():
+            #s = not s
+    
+    #return result_str
+
+#str1 = "Python Exercises"
+#print("Original string: ", str1)
+#print("After alternating the case of each letter of the said string:")
+#print(test(str1))
+
+#str1 = "C# is used to develop web apps, desktop apps, mobile apps, games and much more."
+#print("\nOriginal string: ", str1)
+#print("After alternating the case of each letter of the said string:")
+#print(test(str1))
+
+
+
+
+
+
+
+
+
+#from functools import reduce
+#def test(nums):
+    #return reduce(lambda x, y: lcm(x, y), nums)
+#def gcd(a, b):
+    #while b:
+        #a, b = b, a % b
+    #return a
+#def lcm(a, b):
+    #return a * b // gcd(a, b)
+
+#nums = [4, 6, 8]
+#print("Original list elements:")
+#print(nums)
+#print("LCM of the numbers of the said array of positive integers: ", test(nums))
+
+#nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#print("\nOriginal list elements:")
+#print(nums)
+#print("LCM of the numbers of the said array of positive integers: ", test(nums))
+
+#nums = [48, 72, 108]
+#print("\nOriginal list elements:")
+#print(nums)
+#print("LCM of the numbers of the said array of positive integers: ", test(nums))
+
+
+
+
+
+
+
+
+
+#def test(txt):
+    #return ' '.join(i[::-1] if len(i) % 2 else i for i in txt.split())
+
+#text1 = "The quick brown fox jumps over the lazy dog"
+#print("Original string:")
+#print(text1)
+#print("Reverse all the words of the said string which have odd length:")
+#print(test(text1))
+
+#text2 = "Python Exercises"
+#print("\nOriginal string:")
+#print(text2)
+#print("Reverse all the words of the said string which have odd length:")
+#print(test(text2))
+
+
+
+
+
+
+
+
+
+
+
+#def test(str1, str2):
+    #for i in range(len(str2)):
+       
+        #while str2[i:] in str1 and str2[-1] == str1[-1]:
+            #return str2[i:]
+    
+    #return ""
+
+#str1_1 = "running"
+#str2_1 = "ruminating"
+#print("Original strings: " + str1_1 + "  " + str2_1)
+#print("Common ending between said two strings: " + test(str1_1, str2_1))
+
+#str1_2 = "thisisatest"
+#str2_2 = "testing123testing"
+#print("\nOriginal strings: " + str1_2 + "  " + str2_2)
+#print("Common ending between said two strings: " + test(str1_2, str2_2))
+
+
+
+
+
+
+
+
+#def test(n):
+    #reversed_binary = bin(n)[::-1][:-2]
+    #return int(reversed_binary, 2)
+
+#n1 = 13
+#print("Original number: ", n1)
+#print("Reverse the binary representation of the said integer and convert it into an integer:\n", test(n1))
+
+#n2 = 145
+#print("\nOriginal number: ", n2)
+#print("Reverse the binary representation of the said integer and convert it into an integer:\n", test(n2))
+
+#n3 = 1342
+#print("\nOriginal number: ", n3)
+#print("Reverse the binary representation of the said integer and convert it into an integer:\n", test(n3))
+
+
+
+
+
+
+
+
+
+
+
+#def test(n):
+    # Initialize two variables 'x' and 'y' to the original value of 'n'.
+    #x = n
+    #y = n
+    
+    # Loop indefinitely until a palindrome is found.
+    #while True:
+        # Check if the string representation of 'x' is a palindrome.
+        #if str(x) == str(x)[::-1]:
+            # If 'x' is a palindrome, return it as the closest palindrome.
+            #return x
+        
+        # Decrement 'x' by 1 for the next iteration.
+        #x -= 1
+        
+        # Check if the string representation of 'y' is a palindrome.
+        #if str(y) == str(y)[::-1]:
+            # If 'y' is a palindrome, return it as the closest palindrome.
+            #return y
+        
+        # Increment 'y' by 1 for the next iteration.
+        #y += 1
+
+#n1 = 120
+#print("Original number: ", n1)
+#print("Closest Palindrome number of the said number: ", test(n1))
+
+#n2 = 321
+#print("\nOriginal number: ", n2)
+#print("Closest Palindrome number of the said number: ", test(n2))
+
+#n3 = 43
+#print("\nOriginal number: ", n3)
+#print("Closest Palindrome number of the said number: ", test(n3))
+
+#n4 = 1234
+#print("\nOriginal number: ", n4)
+#print("Closest Palindrome number of the said number: ", test(n4))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
